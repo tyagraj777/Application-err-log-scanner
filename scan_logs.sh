@@ -38,7 +38,7 @@ ERROR_MARKERS=(
 
 # Default number of logs to scan
 NUM_LOG_FILES=2
-LOG_DIRS=("/var/log/syslog" "/var/log/messages")
+LOG_DIRS=("/var/log/syslog" "/var/log/messages" "/var/log/httpd/access_log" "/var/log/apache2/access.log" "/var/log/mysql/error.log")
 
 # Function to find the last N log files by date
 find_log_files() {
