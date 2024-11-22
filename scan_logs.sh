@@ -36,9 +36,11 @@ ERROR_MARKERS=(
     "Invalid Configuration"
 )
 
+
 # Function to scan logs and generate summaries
+
 scan_logs() {
-    LOG_FILES=("/var/log/syslog" "/var/log/messages")
+    LOG_FILES=("/var/log/syslog" "/var/log/messages" "/var/log/httpd/access_log" "/var/log/apache2/access.log" "/var/log/mysql/error.log")
     OUTPUT_FILE="error_summary_$(date +%Y%m%d_%H%M%S).txt"
     
     # Loop through the log files
